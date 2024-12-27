@@ -82,7 +82,7 @@ class CakeListScreen extends StatelessWidget {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          // TODO: Implement add new cake functionality
+          
         },
         backgroundColor: Colors.pink[400],
         child: const Icon(Icons.add),
