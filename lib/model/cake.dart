@@ -7,7 +7,7 @@ class CakeList {
 
   CakeList({required this.cakes});
 
-  // Add factory constructor to create CakeList from JSON
+ 
   factory CakeList.fromJson(List<Map<String, dynamic>> json) {
     List<Cake> cakes = json.map((cakeJson) => Cake.fromJson(cakeJson)).toList();
     return CakeList(cakes: cakes);
@@ -15,14 +15,14 @@ class CakeList {
 }
 
 class Cake {
-  final String cakeName; // Changed to camelCase as per Dart conventions
+  final String cakeName; s
   final int price;
   final List<String> imgList;
   final List<CakeDetail>
-      cakeDetails; // Changed to use a proper CakeDetail class
-  final String description; // Added description field
-  final List<Ingredient> ingredients; // Added ingredients
-  final List<String> instructions; // Added instructions
+      cakeDetails; 
+  final String description; 
+  final List<Ingredient> ingredients;
+  final List<String> instructions; 
 
   Cake({
     required this.cakeName,
@@ -69,7 +69,7 @@ class CakeDetail {
   }
 
   static IconData _getIconFromString(String iconName) {
-    // Add more icons as needed
+  
     switch (iconName) {
       case 'time':
         return Icons.timer;
@@ -121,13 +121,13 @@ final sampleCake = {
     {'name': 'margerine', 'amount': '250g', 'unit': 'half'},
     {'name': 'eggs', 'amount': '4', 'unit': '4'},
     {'name': 'baking powder', 'amount': '1/2 a teaspoon', 'unit': 'spoon'},
-    // Add more ingredients as needed
+    
   ],
   'instructions': [
     'Preheat oven to 350°F (175°C)',
     'Grease and flour two 9-inch cake pans',
     'Mix dry ingredients in a large bowl',
     'Add wet ingredients and mix until smooth',
-    // Add more instructions as needed
+    
   ],
 };
